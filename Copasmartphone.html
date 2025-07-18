@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipo Copacabana - Torneo de Fútbol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .tabla-jugadores {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tabla-jugadores th, .tabla-jugadores td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    .tabla-jugadores th {
+      background-color: #f2f2f2;
+    }
+    .foto-jugador {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 d-flex justify-content-center align-items-center gap-3">
+  <img src="assets/equipos/" alt="logo" style="height: 100px;">
+  Copa Smartphone
+</h2>
+  <div class="table-responsive">
+    <table class="tabla-jugadores">
+      <thead>
+        <tr>
+          <th></th>
+          <th>NOMBRE</th>
+          <th>G</th>
+          <th><img src="assets/iconos/amarilla.png" alt="Amarilla" class="foto-jugador"></th>
+          <th><img src="assets/iconos/roja.png" alt="Roja" class="foto-jugador"></th>
+        </tr>
+      </thead>
+       <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Alejandro Gómez Zapata</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Alexis Navas Cardona</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Giancarlo Tobón</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Camilo Sánchez Tobón</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Felipe Cano</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>James Soto</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Gabriel Restrepo</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Sebastian Correa</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Miguel Ángel Hernandez Vargas</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Andres Araque</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Guillermo Alvarez Gutiérrez</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Yuder Camilo García</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Esteban Córdoba</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Johnny Ramírez Velásquez</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Sebastián Gómez Araque</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Andres Quintero Arias</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Mauricio Alvarez Florez</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Carlos Mario Tabares Jiménez</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan David Ruiz</td><td>-</td><td>-</td><td>-</td></tr>
+<tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Andrés Gómez Agudelo</td><td>-</td><td>-</td><td>-</td></tr>
+
+    </table>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer" class="bg-dark text-white text-center py-4 mt-5"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cargar header y footer -->
+<script>
+  $(function () {
+    $("#header").load("header.html"); // Ya estás en la raíz, no uses ../
+    $("#footer").load("footer.html");
+  });
+</script>
+</body>
+</html>

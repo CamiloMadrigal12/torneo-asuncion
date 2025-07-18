@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipo Copacabana - Torneo de Fútbol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .tabla-jugadores {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tabla-jugadores th, .tabla-jugadores td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    .tabla-jugadores th {
+      background-color: #f2f2f2;
+    }
+    .foto-jugador {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 d-flex justify-content-center align-items-center gap-3">
+  <img src="assets/equipos/Newcastle_United.png" alt="Logo El Cabuyal" style="height: 100px;">
+  Newcastle
+</h2>
+  <div class="table-responsive">
+    <table class="tabla-jugadores">
+      <thead>
+        <tr>
+          <th></th>
+          <th>NOMBRE</th>
+          <th>G</th>
+          <th><img src="assets/iconos/amarilla.png" alt="Amarilla" class="foto-jugador"></th>
+          <th><img src="assets/iconos/roja.png" alt="Roja" class="foto-jugador"></th>
+        </tr>
+      </thead>
+         <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Sebastián Quintero Hurtado</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Esteban Parra</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Fernando Valencia Suárez</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Yerlen Andrés Mosquera Mosquera</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Víctor Danilo López Vásquez</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Julian Alexis Colorado Álvarez</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Ronald Alexis Caro Mendoza</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Alejandro Tabares Galeano</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Daniel Pineda</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Luis Carlos Ramírez Quintero</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Felipe Zapata Ramírez</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Cristian Camilo Durán</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Andrés Viana Mercado</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Johan Felipe Durán Giraldo</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Yulian Esteban Espinal Torres</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Juan Camilo Herrera</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Miguel Ángel Medina</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Jaime Alexander Giraldo Escamilla</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>Diego Fernando Guzmán</td><td>-</td><td>-</td><td>-</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer" class="bg-dark text-white text-center py-4 mt-5"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cargar header y footer -->
+<script>
+  $(function () {
+    $("#header").load("header.html"); // Ya estás en la raíz, no uses ../
+    $("#footer").load("footer.html");
+  });
+</script>
+</body>
+</html>

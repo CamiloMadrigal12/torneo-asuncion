@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuentros del Torneo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .titulo-verde {
+      color: #69bb7e;
+      font-weight: bold;
+    }
+
+    .encabezado-verde th {
+      background-color: #69bb7e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER DINÁMICO -->
+<div id="header"></div>
+
+<div class="container mt-5">
+<h2 class="text-center mb-4 titulo-verde">Calendario de Encuentros</h2>
+<ul class="nav nav-tabs" id="tabFechas" role="tablist">
+<li class="nav-item" role="presentation">
+<button class="nav-link active" data-bs-target="#fecha1" data-bs-toggle="tab" id="fecha1-tab" role="tab" type="button">Fecha 1</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha2" data-bs-toggle="tab" id="fecha2-tab" role="tab" type="button">Fecha 2</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha3" data-bs-toggle="tab" id="fecha3-tab" role="tab" type="button">Fecha 3</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha4" data-bs-toggle="tab" id="fecha4-tab" role="tab" type="button">Fecha 4</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha5" data-bs-toggle="tab" id="fecha5-tab" role="tab" type="button">Fecha 5</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha6" data-bs-toggle="tab" id="fecha6-tab" role="tab" type="button">Fecha 6</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha7" data-bs-toggle="tab" id="fecha7-tab" role="tab" type="button">Fecha 7</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha8" data-bs-toggle="tab" id="fecha8-tab" role="tab" type="button">Fecha 8</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha9" data-bs-toggle="tab" id="fecha9-tab" role="tab" type="button">Fecha 9</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha10" data-bs-toggle="tab" id="fecha10-tab" role="tab" type="button">Fecha 10</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha11" data-bs-toggle="tab" id="fecha11-tab" role="tab" type="button">Fecha 11</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha12" data-bs-toggle="tab" id="fecha12-tab" role="tab" type="button">Fecha 12</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha13" data-bs-toggle="tab" id="fecha13-tab" role="tab" type="button">Fecha 13</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha14" data-bs-toggle="tab" id="fecha14-tab" role="tab" type="button">Fecha 14</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha15" data-bs-toggle="tab" id="fecha15-tab" role="tab" type="button">Fecha 15</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha16" data-bs-toggle="tab" id="fecha16-tab" role="tab" type="button">Fecha 16</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha17" data-bs-toggle="tab" id="fecha17-tab" role="tab" type="button">Fecha 17</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha18" data-bs-toggle="tab" id="fecha18-tab" role="tab" type="button">Fecha 18</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link" data-bs-target="#fecha19" data-bs-toggle="tab" id="fecha19-tab" role="tab" type="button">Fecha 19</button>
+</li>
+</ul>
+<div class="tab-content mt-4" id="tabFechasContent">
+<div class="tab-pane fade show active" id="fecha1" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>5-1</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>4-4</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>0-3</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>7-2</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha2" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>9-7</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>3-4</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>2-3</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>3-5</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>4-3</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>5-4</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONI</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>2-6</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha3" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>5-0</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>12-2</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>7-6</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>5-3</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>6-2</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>4-3</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>4-4</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>5-3</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha4" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>11-2</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>7-9</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>2-2</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>8-0</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>5-3</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>1-2</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>2-5</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>5-2</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha5" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha6" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha7" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha8" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha9" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha10" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha11" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha12" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha13" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha14" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha15" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha16" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha17" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha18" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tab-pane fade" id="fecha19" role="tabpanel">
+<table class="table table-bordered text-center">
+<thead class="encabezado-verde">
+<tr><th>Equipo A</th><th>Resultado</th><th>Equipo B</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="Apocalipsis" class="me-2 logo-equipo" src="assets/equipos/Apocalipsis.jpg" style="height: 24px;"/>Apocalipsis</td>
+<td>-</td>
+<td><img alt="Newcastle" class="me-2 logo-equipo" src="assets/equipos/Newcastle_United.png" style="height: 24px;"/>Newcastle</td>
+</tr>
+<tr>
+<td><img alt="La Banda de Nely" class="me-2 logo-equipo" src="assets/equipos/la banda de nelly.PNG" style="height: 24px;"/>La Banda de Nely</td>
+<td>-</td>
+<td><img alt="Manchester City" class="me-2 logo-equipo" src="assets/equipos/manchester_city.png" style="height: 24px;"/>Manchester City</td>
+</tr>
+<tr>
+<td><img alt="PSG" class="me-2 logo-equipo" src="assets/equipos/PSG.PNG" style="height: 24px;"/>PSG</td>
+<td>-</td>
+<td><img alt="Éxodos" class="me-2 logo-equipo" src="assets/equipos/EXODOS LOGO.jpg" style="height: 24px;"/>Éxodos</td>
+</tr>
+<tr>
+<td><img alt="La Banda" class="me-2 logo-equipo" src="assets/equipos/la banda.png" style="height: 24px;"/>La Banda</td>
+<td>-</td>
+<td><img alt="Cabuyal" class="me-2 logo-equipo" src="assets/equipos/El Cabuyal.png" style="height: 24px;"/>Cabuyal</td>
+</tr>
+<tr>
+<td><img alt="Los Galletos F.C" class="me-2 logo-equipo" src="assets/equipos/galletos.jpg" style="height: 24px;"/>Los Galletos F.C</td>
+<td>-</td>
+<td><img alt="Villa Sanagro" class="me-2 logo-equipo" src="assets/equipos/villa_sanagro.png" style="height: 24px;"/>Villa Sanagro</td>
+</tr>
+<tr>
+<td><img alt="La Esquina" class="me-2 logo-equipo" src="assets/equipos/la esquina.jpg" style="height: 24px;"/>La Esquina</td>
+<td>-</td>
+<td><img alt="CHEER CITY" class="me-2 logo-equipo" src="assets/equipos/cheercity.jpg" style="height: 24px;"/>CHEER CITY</td>
+</tr>
+<tr>
+<td><img alt="Los de Siempre" class="me-2 logo-equipo" src="assets/equipos/los_de_siempre.png" style="height: 24px;"/>Los de Siempre</td>
+<td>-</td>
+<td><img alt="La 47" class="me-2 logo-equipo" src="assets/equipos/la47.png" style="height: 24px;"/>La 47</td>
+</tr>
+<tr>
+<td><img alt="Atletico Municipal" class="me-2 logo-equipo" src="assets/equipos/ateltico municipal.jpg" style="height: 24px;"/>Atletico Municipal</td>
+<td>-</td>
+<td><img alt="Copa Smartphone" class="me-2 logo-equipo" src="assets/equipos/copa_smartphone.png" style="height: 24px;"/>Copa Smartphone</td>
+</tr>
+<tr>
+<td><img alt="Discipulos" class="me-2 logo-equipo" src="assets/equipos/discipulos.jpg" style="height: 24px;"/>Discipulos</td>
+<td>-</td>
+<td><img alt="Sport F.C" class="me-2 logo-equipo" src="assets/equipos/sport_f.c.png" style="height: 24px;"/>Sport F.C</td>
+</tr>
+<tr>
+<td><img alt="El Rio" class="me-2 logo-equipo" src="assets/equipos/el_rio.png" style="height: 24px;"/>El Rio</td>
+<td>-</td>
+<td><img alt="DISPONIBLE" class="me-2 logo-equipo" src="assets/equipos/disponible.png" style="height: 24px;"/>DISPONIBLE</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- FOOTER DINÁMICO -->
+<footer class="mt-5" id="footer"></footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+
+</body>
+</html>

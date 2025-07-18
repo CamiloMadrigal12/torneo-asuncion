@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Valla Menos Vencida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .logo-equipo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .equipo-nombre {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .table thead th {
+      background-color: #69bb7e;
+      color: white;
+    }
+    .titulo-verde {
+      color: #69bb7e;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER DINÁMICO -->
+<div id="header"></div>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4 titulo-verde">Valla Menos Vencida</h2>
+  <table class="table table-bordered table-striped text-center align-middle">
+    <thead>
+      <tr>
+        <th>POS</th>
+        <th>Equipo</th>
+        <th>Puntos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td class="equipo-nombre"><img src="assets/equipos/discipulos.jpg" class="logo-equipo" alt=""> Discípulos</td><td>3</td></tr>
+      <tr><td>2</td><td class="equipo-nombre"><img src="assets/equipos/la esquina.jpg" class="logo-equipo" alt=""> La Esquina</td><td>6</td></tr>
+      <tr><td>3</td><td class="equipo-nombre"><img src="assets/equipos/galletos.jpg" class="logo-equipo" alt=""> Galletos F.C</td><td>7</td></tr>
+      <tr><td>4</td><td class="equipo-nombre"><img src="assets/equipos/ateltico municipal.jpg" class="logo-equipo" alt=""> Atlético Municipal</td><td>7</td></tr>
+      <tr><td>5</td><td class="equipo-nombre"><img src="assets/equipos/la banda.png" class="logo-equipo" alt=""> La Banda</td><td>7</td></tr>
+      <tr><td>6</td><td class="equipo-nombre"><img src="assets/equipos/" class="logo-equipo" alt=""> Villa Sanagro</td><td>9</td></tr>
+      <tr><td>7</td><td class="equipo-nombre"><img src="assets/equipos/el rio.png" class="logo-equipo" alt=""> El Río</td><td>9</td></tr>
+      <tr><td>8</td><td class="equipo-nombre"><img src="assets/equipos/El Cabuyal.png" class="logo-equipo" alt=""> El Cabuyal</td><td>9</td></tr>
+      <tr><td>9</td><td class="equipo-nombre"><img src="assets/equipos/la banda de nelly.PNG" class="logo-equipo" alt=""> La Banda de Nelly</td><td>13</td></tr>
+      <tr><td>10</td><td class="equipo-nombre"><img src="assets/equipos/EXODOS LOGO.jpg" class="logo-equipo" alt=""> Éxodos</td><td>14</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- FOOTER DINÁMICO -->
+<footer class="mt-5" id="footer"></footer>
+
+<!-- Bootstrap y jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  $(function () {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+
+</body>
+</html>

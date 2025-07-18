@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipo Copacabana - Torneo de Fútbol</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .tabla-jugadores {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tabla-jugadores th, .tabla-jugadores td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    .tabla-jugadores th {
+      background-color: #f2f2f2;
+    }
+    .foto-jugador {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 d-flex justify-content-center align-items-center gap-3">
+  <img src="assets/equipos/cheercity.jpg" alt="Logo El Cabuyal" style="height: 100px;">
+  Cheer City
+</h2>
+  <div class="table-responsive">
+    <table class="tabla-jugadores">
+      <thead>
+        <tr>
+          <th></th>
+          <th>NOMBRE</th>
+          <th>G</th>
+          <th><img src="assets/iconos/amarilla.png" alt="Amarilla" class="foto-jugador"></th>
+          <th><img src="assets/iconos/roja.png" alt="Roja" class="foto-jugador"></th>
+        </tr>
+      </thead>
+      <tbody>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>DAVIES HERNAN PALACIO</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>CARLOS ANDRES CONDE TORRES</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>ALEXIS AGUDELO AMAYA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>BRAYAN PEÑARANDA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>VICTOR MANUEL CARTAGENA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>CRISTIAN DAVID BATISTA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>JORGE IVAN AGUDELO</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>SEBASTIAN QUIROZ RUA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>HAROLD TORO</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>CRISTIAN GARCIA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>ANDERSON ARIAS</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>BRAHIAN TORO</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>CAMILO MARIN</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>BRYAN RUA ZAPATA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>MIGUEL ANDRES NUÑEZ ARTEAGA</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>ORLANDO VASQUEZ YANES</td><td>-</td><td>-</td><td>-</td></tr>
+  <tr><td><img src="assets/iconos/jugador.png" class="foto-jugador" alt=""></td><td>JUAN FERNANDO HERNANDEZ</td><td>-</td><td>-</td><td>-</td></tr>
+</tbody>
+    </table>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer" class="bg-dark text-white text-center py-4 mt-5"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cargar header y footer -->
+<script>
+  $(function () {
+    $("#header").load("header.html"); // Ya estás en la raíz, no uses ../
+    $("#footer").load("footer.html");
+  });
+</script>
+</body>
+</html>
